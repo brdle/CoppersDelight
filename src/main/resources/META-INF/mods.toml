@@ -31,3 +31,10 @@ configBackground="minecraft:textures/block/bricks.png"
     versionRange="[1.18.1-1.0,]"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.coppersdelight]]
+    modId="copperized"
+    mandatory=false
+    versionRange="[0,]"
+    ordering="AFTER"
+    side="BOTH"
