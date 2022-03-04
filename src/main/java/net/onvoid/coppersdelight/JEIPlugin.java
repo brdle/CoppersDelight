@@ -6,11 +6,11 @@ import mezz.jei.api.MethodsReturnNonnullByDefault;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.client.Minecraft;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.onvoid.coppersdelight.common.CoppersDelightItems;
 import vectorwing.farmersdelight.FarmersDelight;
-import vectorwing.farmersdelight.common.utility.TextUtils;
+import vectorwing.farmersdelight.utils.TextUtils;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 @JeiPlugin

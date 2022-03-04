@@ -1,22 +1,21 @@
 package net.onvoid.coppersdelight.common;
 
-import net.minecraft.util.LazyLoadedValue;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.item.IItemTier;
+import net.minecraft.item.crafting.Ingredient;
+import net.onvoid.coppersdelight.CoppersDelight;
+
 import java.util.function.Supplier;
 
-public enum CoppersDelightTiers implements Tier {
-    COPPER(2, 150, 5.0F, 1.5F, 14, () -> {
-        return Ingredient.of(Items.COPPER_INGOT);
-    });
+
+public enum CoppersDelightTiers implements IItemTier {
+    COPPER(2, 150, 5.0F, 1.5F, 14, CoppersDelight.copperIngredient);
 
     private final int level;
     private final int uses;
     private final float speed;
     private final float damage;
     private final int enchantmentValue;
-    private final LazyLoadedValue<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     private CoppersDelightTiers(int level, int uses, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
         this.level = level;
@@ -24,7 +23,7 @@ public enum CoppersDelightTiers implements Tier {
         this.speed = speed;
         this.damage = damage;
         this.enchantmentValue = enchantmentValue;
-        this.repairIngredient = new LazyLoadedValue<>(repairIngredient);
+        this.repairIngredient = repairIngredient;
     }
 
     public int getUses() {

@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[39,)"
+loaderVersion="[36,)"
 license="MIT License"
 issueTrackerURL="https://github.com/onVoid/CoppersDelight/issues"
 
@@ -21,20 +21,13 @@ configBackground="minecraft:textures/block/bricks.png"
 [[dependencies.coppersdelight]]
     modId="forge"
     mandatory=true
-    versionRange="[39,)"
+    versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.coppersdelight]]
     modId="farmersdelight"
     mandatory=true
-    versionRange="[1.18.1-1.0,]"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.coppersdelight]]
-    modId="copperized"
-    mandatory=false
-    versionRange="[0,]"
+    versionRange="[1.16.5-0.5,]"
     ordering="AFTER"
     side="BOTH"
