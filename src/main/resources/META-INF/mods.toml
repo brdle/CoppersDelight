@@ -1,7 +1,7 @@
 modLoader="javafml"
 loaderVersion="[39,)"
 license="MIT License"
-issueTrackerURL="https://github.com/onVoid/CoppersDelight/issues"
+issueTrackerURL="https://github.com/brdle/CoppersDelight/issues"
 
 
 [[mods]]
@@ -13,7 +13,7 @@ updateJSONURL="https://onvoid.net/coppersdelight/update.json"
 logoFile="coppersdelight.png"
 logoBlur=false
 credits="vectorwing - Farmer's Delight creator"
-authors="onVoid"
+authors="brdle"
 description="Adds a Copper Knife to Farmer's Delight."
 itemIcon="coppersdelight:copper_knife"
 configBackground="minecraft:textures/block/bricks.png"
