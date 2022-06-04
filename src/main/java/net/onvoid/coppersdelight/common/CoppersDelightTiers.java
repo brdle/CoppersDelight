@@ -7,9 +7,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum CoppersDelightTiers implements Tier {
-    COPPER(2, 150, 5.0F, 1.5F, 14, () -> {
-        return Ingredient.of(Items.COPPER_INGOT);
-    });
+    COPPER(2, 150, 5.0F, 1.5F, 14, () -> Ingredient.of(Items.COPPER_INGOT));
 
     private final int level;
     private final int uses;
